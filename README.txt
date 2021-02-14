@@ -4,7 +4,7 @@
 
 --- Scenario ---
 
-	There is 2 clients. Client_1 and Client_2. Client_1 is the creator of RSA keypairs and have only access to private key. Client_2 has some very
+	There is 2 clients. Client_1 and Client_2. Client_1 is the creator of RSA keypairs and he only have access to private key. Client_2 has some very
 	secret message it wants to share privately with Client_1. Client_2 asks public key and modulus from Client_1 and then encrypts the message with it and then
 	sends the message to Client_1 over HTTP JWT-token. JWT-token contains encrypted RSA message. 
 
