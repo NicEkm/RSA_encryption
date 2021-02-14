@@ -14,7 +14,7 @@ First install libraries in requirements.txt
 
 Then go into Client_2.py file and change "secret_message"-part to be your message that you want privately share with Client_1. It needs to be in str format!
 Then run ('$python Client_1.py') and ('$python Client_2.py'). This will start 2 aiohttp servers that exposes Client_1 to port 8080 and Client_2 to port 7070.
-Then when you have you message written in the Client_2.py and you have both servers running go into "http://localhost:7070/send_message/"- url and it will start encryption process
+Then when you have you message written in the Client_2.py and you have both servers running go into - http://localhost:7070/send_message/ - url and it will start encryption process
 and send the message to client_1.  !! Both servers needs to run in order to send the message !!
 
 ## License
