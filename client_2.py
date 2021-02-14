@@ -9,7 +9,7 @@ from aiohttp import web
 RSA_key_endpoint = 'http://127.0.0.1:8080/generate_keys'
 encoding_key = 'asd123'
 receiver_url = 'http://127.0.0.1:8080/receive_message?'
-secret_message = str('Very secret message that no one can see!') # <-- this is the message that is sended. It needs to be str!
+secret_message = str('Very secret message that no one can see!') # <-- this is the message that will be sent. It needs to be str!
 
 
 async def get_public_key(request):
