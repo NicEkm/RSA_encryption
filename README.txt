@@ -1,6 +1,6 @@
 --- RSA_encryption ---
 
-	My aim is to show as clearly how to use RSA to encrypt messages between two clients that are communicatingg for example via messages.
+	My aim is to show as clearly as possible, how to use RSA to encrypt messages between two clients that are communicating for example via messages.
 
 --- Scenario ---
 
