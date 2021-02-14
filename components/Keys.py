@@ -7,7 +7,7 @@ saved_keys = {'p_k':'',
               'pr_k':'',
               'N':''}
 
-class keys:
+class Keys:
     def __init__(self):
         pass
         

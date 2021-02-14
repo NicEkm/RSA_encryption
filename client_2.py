@@ -3,7 +3,7 @@ import asyncio
 import json
 import urllib
 import jwt
-from components.Encrypt_message import encryption
+from components.Encrypt_message import Encryption
 from aiohttp import web
 
 RSA_key_endpoint = 'http://127.0.0.1:8080/generate_keys'
@@ -35,7 +35,7 @@ async def create_message_that_you_want_to_encrypt(request):
     print('Public Key and modulus that were generated: ', public_key)
     pk = public_key['pk']
     N = public_key['N']
-    encrypted_message = encryption().encrypt(pk, N, message)
+    encrypted_message = Encryption().encrypt(pk, N, message)
     print('Enrypted message with RSA: ', encrypted_message) 
     payload = {
         "message":encrypted_message

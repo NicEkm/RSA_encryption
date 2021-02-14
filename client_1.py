@@ -5,7 +5,7 @@ from urllib.parse import urlparse
 from aiohttp import web
 from components.Encryption import RSA
 from components.Generate_keys import Generate_keys
-from components.Keys import keys
+from components.Keys import Keys
 
 
 decoding_key = 'asd123'
@@ -36,8 +36,8 @@ async def receive_message(request):
         o = urlparse(url)
         encoded_token = o.query[14:]
         decoded_token = jwt.decode(encoded_token, decoding_key, algorithms='HS256')
-        private_key = keys().load()[1]
-        N = keys().load()[2]
+        private_key = Keys().load()[1]
+        N = Keys().load()[2]
         message = decoded_token['message']
         decrypted_message = RSA().decrypt(private_key, N, message)
         print('Message received from the sender: ',decrypted_message)

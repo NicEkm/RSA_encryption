@@ -7,7 +7,7 @@ tools for creating the public and private key
 
 
 from components.Encryption import RSA
-from components.Keys import keys as k
+from components.Keys import Keys as k
 
 
 

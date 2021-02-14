@@ -6,7 +6,7 @@ and encrypts the access token with those.
 
 
 
-class encryption:
+class Encryption:
     def __init__(self):
         pass
     def encrypt(self, e, N, msg):
